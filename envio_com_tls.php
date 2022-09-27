@@ -34,8 +34,8 @@ try {
     //Content
     $mail->isHTML(true);  //ative caso queira enviar mensagem no formato HTML
     $mail->Subject = 'Enviando mensagem teste sem SSL';
-    $mail->Body    = 'Esta é uma mensagem de teste via PHPMailer, sem SSL/TLS'; //mensagem
-    $mail->AltBody = 'Esta é uma mensagem de teste via PHPMailer, sem SSL/TLS'; //mensagem alternativa = opcional
+    $mail->Body    = 'Esta é uma mensagem de teste via PHPMailer, com TLS'; //mensagem
+    $mail->AltBody = 'Esta é uma mensagem de teste via PHPMailer, com TLS'; //mensagem alternativa = opcional
 
     $mail->send();
     echo 'Mensagem enviada com sucesso de: '.$mail->Username;
